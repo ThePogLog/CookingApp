@@ -24,23 +24,29 @@ public class AHHHH : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
-        cost1.text = PlayerPrefs.GetFloat(amount1.text).ToString();
+        amount1.text = PlayerPrefs.GetFloat(amount1.text).ToString();
+        cost1.text = PlayerPrefs.GetFloat(cost1.text).ToString();
         price = cos * amu;
         total1.text = price.ToString();
+        
         
 
     }
     public void totalCost()
     {
+        amountOne();
+        price = cos * amu;
+        Debug.Log(price);
         total1.text = price.ToString();
     }
-    private void amountOne(object sender, EventArgs e)
+    private void amountOne()
     {
-        double amu = double.Parse(amount1.text);
-        System.Diagnostics.Debug.WriteLine(amu);
-        double cos = double.Parse(cost1.text);
-        System.Diagnostics.Debug.WriteLine(cos);
+        amu = 0;
+        float.TryParse(amount1.text, out amu);
+        //Debug.Log(amu);
+        cos = 0;
+        float.TryParse(cost1.text, out cos);
+        //Debug.Log(cos);
         
     }
     // Update is called once per frame
