@@ -5,14 +5,14 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 
-public class IMAKMS : MonoBehaviour
+public class AHHHH : MonoBehaviour
 {
     [SerializeField]
-    public TextMeshProUGUI item1;
+    public TMP_InputField item1;
     [SerializeField]
-    public TextMeshProUGUI amount1;
+    public TMP_InputField amount1;
     [SerializeField]
-    public TextMeshProUGUI cost1;
+    public TMP_InputField cost1;
     [SerializeField]
     float price;
     [SerializeField]
@@ -20,13 +20,15 @@ public class IMAKMS : MonoBehaviour
     [SerializeField]
     float cos;
     [SerializeField]
-    public TextMeshProUGUI total1;
+    public Text total1;
     // Start is called before the first frame update
     void Start()
     {
         
-        cost1 = PlayerPrefs.GetFloat(amount1.);
+        cost1.text = PlayerPrefs.GetFloat(amount1.text).ToString();
         price = cos * amu;
+        total1.text = price.ToString();
+        
 
     }
     public void totalCost()
