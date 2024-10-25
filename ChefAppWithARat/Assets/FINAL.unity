@@ -9636,6 +9636,7 @@ GameObject:
   - component: {fileID: 1475340123}
   - component: {fileID: 1475340122}
   - component: {fileID: 1475340121}
+  - component: {fileID: 1475340124}
   m_Layer: 5
   m_Name: Button
   m_TagString: Untagged
@@ -9770,6 +9771,18 @@ MonoBehaviour:
       - m_Target: {fileID: 1475340121}
         m_TargetAssemblyTypeName: AHHHH, Assembly-CSharp
         m_MethodName: totalCost
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1475340124}
+        m_TargetAssemblyTypeName: CompleteTotal, Assembly-CSharp
+        m_MethodName: theCost
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -9931,6 +9944,25 @@ MonoBehaviour:
   amu: 0
   cos: 0
   total1: {fileID: 799631213}
+--- !u!114 &1475340124
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1475340113}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a8a6ee14b356cfb47adb5b93ade5c679, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  total1: {fileID: 297318009}
+  total2: {fileID: 1460761244}
+  total3: {fileID: 2073558908}
+  total4: {fileID: 799631213}
+  total5: {fileID: 1427299929}
+  total6: {fileID: 1291375155}
+  FINALTOTAL: {fileID: 2062425419}
 --- !u!1 &1496474862
 GameObject:
   m_ObjectHideFlags: 0
@@ -13138,7 +13170,7 @@ GameObject:
   - component: {fileID: 2062425420}
   - component: {fileID: 2062425419}
   m_Layer: 5
-  m_Name: FINALTOTAL
+  m_Name: FINALTOTAL1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
